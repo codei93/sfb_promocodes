@@ -62,6 +62,14 @@
       </div>
       <div class="modal-body">
         <div class="message"></div>
+         <div class="form-group">
+          <label>Expiry Date</label>
+          <div class="input-append date form_datetime">
+            <input type="text" class="form-control" name="expire_at" required >
+            <span class="add-on"><i class="icon-th"></i></span>
+          </div>  
+        </div>
+
         <div class="form-group">
           <label>Radius</label>
  		  <select name="radiusID" class="form-control" required>
@@ -93,15 +101,8 @@
           </select>	
         </div>
         <div class="form-group">
-          <label>Percentage (% deduct from the journey price)</label>
-          <input type="number" name="amount" min="1" max="100" required class="form-control">
-        </div>
-        <div class="form-group">
-          <label>Expiry Date</label>
-          <div class="input-append date form_datetime">
-            <input type="text" class="form-control" name="expire_at" required readonly>
-            <span class="add-on"><i class="icon-th"></i></span>
-          </div>  
+          <label>Percentage discount</label>
+          <input type="number" name="amount" min="1" max="100" required placeholder="ex 50" class="form-control">
         </div>
       </div>
       <div class="modal-footer">
